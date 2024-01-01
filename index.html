@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da velha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Jogo da velha.<span>JS</span></h1>
+      <section id="players">
+        <div>
+          <input type="text" id="player1" class="player-input" />
+          <button class="player-input-btn">Confirmar</button>
+        </div>
+        <div>
+          <input type="text" id="player2" class="player-input" />
+          <button class="player-input-btn">Confirmar</button>
+        </div>
+      </section>
+      <section id="game">
+        <div class="play-area" id="play-area1">X</div>
+        <div class="play-area" id="play-area2">X</div>
+        <div class="play-area" id="play-area3">X</div>
+        <div class="play-area" id="play-area4">O</div>
+        <div class="play-area" id="play-area5"></div>
+        <div class="play-area" id="play-area6"></div>
+        <div class="play-area" id="play-area7"></div>
+        <div class="play-area" id="play-area8"></div>
+        <div class="play-area" id="play-area9"></div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

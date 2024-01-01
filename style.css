@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #2c3e50;
+}
+
+main {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h1 span {
+  background-color: yellow;
+  color: #2c3e50;
+  padding: 0 0.5rem;
+}
+
+#players {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+#players div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-input {
+  padding: 0.5rem 0.5rem;
+  border: 4px solid #8e44ad;
+  border-radius: 2px 0 0 2px;
+  background-color: transparent;
+  outline-color: transparent;
+  display: block;
+  font-size: 1rem;
+}
+
+.player-input-btn {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  border: 4px solid #8e44ad;
+  border-radius: 0 2px 2px 0;
+  background-color: #8e44ad;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.player-input-btn:hover {
+  color: #e7e7e7;
+  background-color: #7d3d99;
+}
+
+#game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 60%;
+  margin: 4rem auto;
+}
+
+.play-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  color: #2c3e50;
+  font-size: 9rem;
+}
+
+.play-area:hover {
+  background-color: #e7e7e7;
+}
