@@ -61,11 +61,6 @@ h1 span {
   font-size: 1rem;
 }
 
-.player-input-btn:hover {
-  color: #e7e7e7;
-  background-color: #7d3d99;
-}
-
 #game {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -88,4 +83,69 @@ h1 span {
 
 .play-area:hover {
   background-color: #e7e7e7;
+}
+
+@media (max-width: 1023px) {
+  main {
+    width: 90%;
+  }
+
+  #game {
+    width: 50%;
+  }
+
+  .play-area {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    width: 80%;
+  }
+
+  #game {
+    width: 90%;
+  }
+
+  .play-area {
+    width: 80px;
+    height: 80px;
+    font-size: 4rem;
+  }
+
+  #players {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  #players div {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 360px) {
+  main {
+    width: 90%;
+  }
+
+  #game {
+    width: 92%;
+  }
+
+  .play-area {
+    width: 75px;
+    height: 75px;
+    font-size: 4rem;
+  }
+
+  #players {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  #players div {
+    justify-content: center;
+  }
 }
