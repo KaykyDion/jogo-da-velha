@@ -11,6 +11,7 @@ playersInputBtn.forEach((btn) => {
     if (player.value !== "") {
       btn.innerText = "Confirmado";
       btn.classList.add("confirmed");
+      btn.disabled = true;
       player.classList.add("confirmed");
       player.setAttribute("disabled", "");
     } else {
