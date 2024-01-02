@@ -23,7 +23,9 @@
             class="player-input"
             placeholder="jogador 1"
           />
-          <button class="player-input-btn">Confirmar</button>
+          <button class="player-input-btn" data-player="player1">
+            Confirmar
+          </button>
         </div>
         <div>
           <input
@@ -32,14 +34,22 @@
             class="player-input"
             placeholder="jogador 2"
           />
-          <button class="player-input-btn">Confirmar</button>
+          <button class="player-input-btn" data-player="player2">
+            Confirmar
+          </button>
         </div>
       </section>
+      <section id="info">
+        <p id="info-text">
+          *O jogo se inicia quando os 2 jogadores são confirmados*
+        </p>
+        <button id="reset-button">Reiniciar</button>
+      </section>
       <section id="game">
-        <div class="play-area" id="play-area1">X</div>
-        <div class="play-area" id="play-area2">X</div>
-        <div class="play-area" id="play-area3">X</div>
-        <div class="play-area" id="play-area4">O</div>
+        <div class="play-area" id="play-area1"></div>
+        <div class="play-area" id="play-area2"></div>
+        <div class="play-area" id="play-area3"></div>
+        <div class="play-area" id="play-area4"></div>
         <div class="play-area" id="play-area5"></div>
         <div class="play-area" id="play-area6"></div>
         <div class="play-area" id="play-area7"></div>

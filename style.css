@@ -49,6 +49,10 @@ h1 span {
   font-size: 1rem;
 }
 
+.player-input[disabled] {
+  opacity: 70%;
+}
+
 .player-input-btn {
   display: block;
   padding: 0.5rem 0.5rem;
@@ -61,12 +65,50 @@ h1 span {
   font-size: 1rem;
 }
 
+.player-input-btn.confirmed {
+  opacity: 70%;
+  cursor: auto;
+}
+
+#info {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+}
+
+.current-player {
+  color: #e74c3c;
+}
+
+.winning-player {
+  color: #2ecc71;
+}
+
+#reset-button {
+  width: 150px;
+  margin: 1.5rem auto 0;
+  padding: 5px 15px;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  background-color: #f39c12;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+#reset-button:hover {
+  color: #e7e7e7;
+  background-color: #db8e11;
+  border-color: #e7e7e7;
+}
+
 #game {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 33% 33% 33%;
   gap: 20px;
   width: 60%;
   margin: 4rem auto;
+  display: none;
 }
 
 .play-area {
@@ -74,11 +116,14 @@ h1 span {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  width: 200px;
   height: 200px;
   cursor: pointer;
   color: #2c3e50;
   font-size: 9rem;
+}
+
+.play-area.winner-area {
+  background-color: #2ecc71;
 }
 
 .play-area:hover {
@@ -95,26 +140,12 @@ h1 span {
   }
 
   .play-area {
-    width: 125px;
     height: 125px;
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 767px) {
-  main {
-    width: 80%;
-  }
-
-  #game {
-    width: 90%;
-  }
-
-  .play-area {
-    width: 80px;
-    height: 80px;
-    font-size: 4rem;
-  }
-
   #players {
     flex-direction: column;
     gap: 0.75rem;
@@ -122,30 +153,20 @@ h1 span {
 
   #players div {
     justify-content: center;
+  }
+
+  .play-area {
+    height: 110px;
+  }
+
+  #game {
+    width: 80%;
+    gap: 10px;
   }
 }
 
-@media (max-width: 360px) {
-  main {
-    width: 90%;
-  }
-
-  #game {
-    width: 92%;
-  }
-
+@media (max-width: 450px) {
   .play-area {
-    width: 75px;
-    height: 75px;
-    font-size: 4rem;
-  }
-
-  #players {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  #players div {
-    justify-content: center;
+    height: 80px;
   }
 }
