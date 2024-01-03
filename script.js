@@ -163,11 +163,3 @@ resetBtn.addEventListener("click", () => {
   infoText.innerHTML = `Turno de: <span class='current-player'>${playersInput[randomNumber].value}</span>`;
   resetBtn.style.display = "none";
 });
-
-const winCondition1 = [playAreas[0], playAreas[1], playAreas[2]];
-const winCondition2 = [playAreas[3], playAreas[4], playAreas[5]];
-const winCondition3 = [playAreas[6], playAreas[7], playAreas[8]];
-const winCondition4 = [playAreas[0], playAreas[3], playAreas[6]];
-const winCondition5 = [playAreas[1], playAreas[4], playAreas[7]];
-const winCondition6 = [playAreas[2], playAreas[5], playAreas[8]];
-const winCondition7 = [playAreas[1], playAreas[4], playAreas[7]];
